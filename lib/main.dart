@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:indoscape/presentation/page/detail/culture_detail_page.dart';
 import 'package:indoscape/presentation/page/detail/mountain_detail_page.dart';
 import 'package:indoscape/presentation/page/detail/travel_detail_page.dart';
@@ -23,7 +22,6 @@ import 'package:indoscape/presentation/page/splash_page.dart';
 import 'package:indoscape/presentation/widget/navigation_widget.dart';
 
 void main() async {
-  await dotenv.load(fileName: '.env');
   runApp(const MyApp());
 }
 

@@ -22,7 +22,29 @@ class _ProfilePageState extends State<ProfilePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            InkWell(
+            Container(
+              width: MediaQuery.of(context).size.width / 2,
+              height: 48,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: primaryColor,
+                ),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10,
+                vertical: 5,
+              ),
+              child: Center(
+                child: Text(
+                  'Comming Soon',
+                  style: jakartaH4.copyWith(
+                    color: primaryColor,
+                  ),
+                ),
+              ),
+            ),
+            /*InkWell(
               onTap: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
@@ -50,9 +72,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
               ),
-            ),
+            ),*/
             const VerticalGap10(),
-            InkWell(
+            /*InkWell(
               onTap: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
@@ -82,7 +104,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
               ),
-            ),
+            ),*/
           ],
         ),
       ),
